@@ -1,0 +1,926 @@
+{
+  "description": "Layered ImageGen prompt manifest. Compose as rootPrompt + optional suitPrompt + arcanaPrompt.",
+  "rootPrompt": "root.md",
+  "suitPrompts": {
+    "wands": "suits/wands.md",
+    "cups": "suits/cups.md",
+    "swords": "suits/swords.md",
+    "pentacles": "suits/pentacles.md"
+  },
+  "cards": [
+    {
+      "id": "00",
+      "name": "The Fool",
+      "filename": "00_major_00_the-fool.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/00_major_00_the-fool.md"
+      ]
+    },
+    {
+      "id": "01",
+      "name": "The Magician",
+      "filename": "01_major_01_the-magician.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/01_major_01_the-magician.md"
+      ]
+    },
+    {
+      "id": "02",
+      "name": "The High Priestess",
+      "filename": "02_major_02_the-high-priestess.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/02_major_02_the-high-priestess.md"
+      ]
+    },
+    {
+      "id": "03",
+      "name": "The Empress",
+      "filename": "03_major_03_the-empress.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/03_major_03_the-empress.md"
+      ]
+    },
+    {
+      "id": "04",
+      "name": "The Emperor",
+      "filename": "04_major_04_the-emperor.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/04_major_04_the-emperor.md"
+      ]
+    },
+    {
+      "id": "05",
+      "name": "The Hierophant",
+      "filename": "05_major_05_the-hierophant.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/05_major_05_the-hierophant.md"
+      ]
+    },
+    {
+      "id": "06",
+      "name": "The Lovers",
+      "filename": "06_major_06_the-lovers.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/06_major_06_the-lovers.md"
+      ]
+    },
+    {
+      "id": "07",
+      "name": "The Chariot",
+      "filename": "07_major_07_the-chariot.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/07_major_07_the-chariot.md"
+      ]
+    },
+    {
+      "id": "08",
+      "name": "Strength",
+      "filename": "08_major_08_strength.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/08_major_08_strength.md"
+      ]
+    },
+    {
+      "id": "09",
+      "name": "The Hermit",
+      "filename": "09_major_09_the-hermit.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/09_major_09_the-hermit.md"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Wheel of Fortune",
+      "filename": "10_major_10_wheel-of-fortune.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/10_major_10_wheel-of-fortune.md"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Justice",
+      "filename": "11_major_11_justice.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/11_major_11_justice.md"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "The Hanged Man",
+      "filename": "12_major_12_the-hanged-man.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/12_major_12_the-hanged-man.md"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Death",
+      "filename": "13_major_13_death.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/13_major_13_death.md"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Temperance",
+      "filename": "14_major_14_temperance.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/14_major_14_temperance.md"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "The Devil",
+      "filename": "15_major_15_the-devil.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/15_major_15_the-devil.md"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "The Tower",
+      "filename": "16_major_16_the-tower.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/16_major_16_the-tower.md"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "The Star",
+      "filename": "17_major_17_the-star.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/17_major_17_the-star.md"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "The Moon",
+      "filename": "18_major_18_the-moon.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/18_major_18_the-moon.md"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "The Sun",
+      "filename": "19_major_19_the-sun.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/19_major_19_the-sun.md"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Judgement",
+      "filename": "20_major_20_judgement.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/20_major_20_judgement.md"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "The World",
+      "filename": "21_major_21_the-world.png",
+      "arcana": "major",
+      "suit": null,
+      "layers": [
+        "root.md",
+        "arcana/major/21_major_21_the-world.md"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Ace of Wands",
+      "filename": "22_wands_ace.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/22_wands_ace.md"
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Two of Wands",
+      "filename": "23_wands_two.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/23_wands_two.md"
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Three of Wands",
+      "filename": "24_wands_three.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/24_wands_three.md"
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Four of Wands",
+      "filename": "25_wands_four.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/25_wands_four.md"
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Five of Wands",
+      "filename": "26_wands_five.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/26_wands_five.md"
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Six of Wands",
+      "filename": "27_wands_six.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/27_wands_six.md"
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Seven of Wands",
+      "filename": "28_wands_seven.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/28_wands_seven.md"
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Eight of Wands",
+      "filename": "29_wands_eight.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/29_wands_eight.md"
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Nine of Wands",
+      "filename": "30_wands_nine.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/30_wands_nine.md"
+      ]
+    },
+    {
+      "id": "31",
+      "name": "Ten of Wands",
+      "filename": "31_wands_ten.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/31_wands_ten.md"
+      ]
+    },
+    {
+      "id": "32",
+      "name": "Page of Wands",
+      "filename": "32_wands_page.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/32_wands_page.md"
+      ]
+    },
+    {
+      "id": "33",
+      "name": "Knight of Wands",
+      "filename": "33_wands_knight.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/33_wands_knight.md"
+      ]
+    },
+    {
+      "id": "34",
+      "name": "Queen of Wands",
+      "filename": "34_wands_queen.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/34_wands_queen.md"
+      ]
+    },
+    {
+      "id": "35",
+      "name": "King of Wands",
+      "filename": "35_wands_king.png",
+      "arcana": "minor",
+      "suit": "wands",
+      "layers": [
+        "root.md",
+        "suits/wands.md",
+        "arcana/wands/35_wands_king.md"
+      ]
+    },
+    {
+      "id": "36",
+      "name": "Ace of Cups",
+      "filename": "36_cups_ace.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/36_cups_ace.md"
+      ]
+    },
+    {
+      "id": "37",
+      "name": "Two of Cups",
+      "filename": "37_cups_two.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/37_cups_two.md"
+      ]
+    },
+    {
+      "id": "38",
+      "name": "Three of Cups",
+      "filename": "38_cups_three.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/38_cups_three.md"
+      ]
+    },
+    {
+      "id": "39",
+      "name": "Four of Cups",
+      "filename": "39_cups_four.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/39_cups_four.md"
+      ]
+    },
+    {
+      "id": "40",
+      "name": "Five of Cups",
+      "filename": "40_cups_five.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/40_cups_five.md"
+      ]
+    },
+    {
+      "id": "41",
+      "name": "Six of Cups",
+      "filename": "41_cups_six.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/41_cups_six.md"
+      ]
+    },
+    {
+      "id": "42",
+      "name": "Seven of Cups",
+      "filename": "42_cups_seven.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/42_cups_seven.md"
+      ]
+    },
+    {
+      "id": "43",
+      "name": "Eight of Cups",
+      "filename": "43_cups_eight.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/43_cups_eight.md"
+      ]
+    },
+    {
+      "id": "44",
+      "name": "Nine of Cups",
+      "filename": "44_cups_nine.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/44_cups_nine.md"
+      ]
+    },
+    {
+      "id": "45",
+      "name": "Ten of Cups",
+      "filename": "45_cups_ten.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/45_cups_ten.md"
+      ]
+    },
+    {
+      "id": "46",
+      "name": "Page of Cups",
+      "filename": "46_cups_page.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/46_cups_page.md"
+      ]
+    },
+    {
+      "id": "47",
+      "name": "Knight of Cups",
+      "filename": "47_cups_knight.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/47_cups_knight.md"
+      ]
+    },
+    {
+      "id": "48",
+      "name": "Queen of Cups",
+      "filename": "48_cups_queen.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/48_cups_queen.md"
+      ]
+    },
+    {
+      "id": "49",
+      "name": "King of Cups",
+      "filename": "49_cups_king.png",
+      "arcana": "minor",
+      "suit": "cups",
+      "layers": [
+        "root.md",
+        "suits/cups.md",
+        "arcana/cups/49_cups_king.md"
+      ]
+    },
+    {
+      "id": "50",
+      "name": "Ace of Swords",
+      "filename": "50_swords_ace.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/50_swords_ace.md"
+      ]
+    },
+    {
+      "id": "51",
+      "name": "Two of Swords",
+      "filename": "51_swords_two.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/51_swords_two.md"
+      ]
+    },
+    {
+      "id": "52",
+      "name": "Three of Swords",
+      "filename": "52_swords_three.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/52_swords_three.md"
+      ]
+    },
+    {
+      "id": "53",
+      "name": "Four of Swords",
+      "filename": "53_swords_four.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/53_swords_four.md"
+      ]
+    },
+    {
+      "id": "54",
+      "name": "Five of Swords",
+      "filename": "54_swords_five.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/54_swords_five.md"
+      ]
+    },
+    {
+      "id": "55",
+      "name": "Six of Swords",
+      "filename": "55_swords_six.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/55_swords_six.md"
+      ]
+    },
+    {
+      "id": "56",
+      "name": "Seven of Swords",
+      "filename": "56_swords_seven.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/56_swords_seven.md"
+      ]
+    },
+    {
+      "id": "57",
+      "name": "Eight of Swords",
+      "filename": "57_swords_eight.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/57_swords_eight.md"
+      ]
+    },
+    {
+      "id": "58",
+      "name": "Nine of Swords",
+      "filename": "58_swords_nine.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/58_swords_nine.md"
+      ]
+    },
+    {
+      "id": "59",
+      "name": "Ten of Swords",
+      "filename": "59_swords_ten.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/59_swords_ten.md"
+      ]
+    },
+    {
+      "id": "60",
+      "name": "Page of Swords",
+      "filename": "60_swords_page.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/60_swords_page.md"
+      ]
+    },
+    {
+      "id": "61",
+      "name": "Knight of Swords",
+      "filename": "61_swords_knight.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/61_swords_knight.md"
+      ]
+    },
+    {
+      "id": "62",
+      "name": "Queen of Swords",
+      "filename": "62_swords_queen.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/62_swords_queen.md"
+      ]
+    },
+    {
+      "id": "63",
+      "name": "King of Swords",
+      "filename": "63_swords_king.png",
+      "arcana": "minor",
+      "suit": "swords",
+      "layers": [
+        "root.md",
+        "suits/swords.md",
+        "arcana/swords/63_swords_king.md"
+      ]
+    },
+    {
+      "id": "64",
+      "name": "Ace of Pentacles",
+      "filename": "64_pentacles_ace.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/64_pentacles_ace.md"
+      ]
+    },
+    {
+      "id": "65",
+      "name": "Two of Pentacles",
+      "filename": "65_pentacles_two.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/65_pentacles_two.md"
+      ]
+    },
+    {
+      "id": "66",
+      "name": "Three of Pentacles",
+      "filename": "66_pentacles_three.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/66_pentacles_three.md"
+      ]
+    },
+    {
+      "id": "67",
+      "name": "Four of Pentacles",
+      "filename": "67_pentacles_four.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/67_pentacles_four.md"
+      ]
+    },
+    {
+      "id": "68",
+      "name": "Five of Pentacles",
+      "filename": "68_pentacles_five.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/68_pentacles_five.md"
+      ]
+    },
+    {
+      "id": "69",
+      "name": "Six of Pentacles",
+      "filename": "69_pentacles_six.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/69_pentacles_six.md"
+      ]
+    },
+    {
+      "id": "70",
+      "name": "Seven of Pentacles",
+      "filename": "70_pentacles_seven.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/70_pentacles_seven.md"
+      ]
+    },
+    {
+      "id": "71",
+      "name": "Eight of Pentacles",
+      "filename": "71_pentacles_eight.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/71_pentacles_eight.md"
+      ]
+    },
+    {
+      "id": "72",
+      "name": "Nine of Pentacles",
+      "filename": "72_pentacles_nine.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/72_pentacles_nine.md"
+      ]
+    },
+    {
+      "id": "73",
+      "name": "Ten of Pentacles",
+      "filename": "73_pentacles_ten.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/73_pentacles_ten.md"
+      ]
+    },
+    {
+      "id": "74",
+      "name": "Page of Pentacles",
+      "filename": "74_pentacles_page.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/74_pentacles_page.md"
+      ]
+    },
+    {
+      "id": "75",
+      "name": "Knight of Pentacles",
+      "filename": "75_pentacles_knight.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/75_pentacles_knight.md"
+      ]
+    },
+    {
+      "id": "76",
+      "name": "Queen of Pentacles",
+      "filename": "76_pentacles_queen.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/76_pentacles_queen.md"
+      ]
+    },
+    {
+      "id": "77",
+      "name": "King of Pentacles",
+      "filename": "77_pentacles_king.png",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "layers": [
+        "root.md",
+        "suits/pentacles.md",
+        "arcana/pentacles/77_pentacles_king.md"
+      ]
+    }
+  ]
+}
