@@ -640,6 +640,7 @@ function ResultPage({ navigate }: { navigate: (path: string) => void }) {
   const { language, t } = useI18n()
   const category = getCategory(categoryId)
   const categoryCopy = getCategoryCopy(language, categoryId)
+  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null)
 
   useEffect(() => {
     if (!categoryId || !paid || selectedCards.length === 0) {
@@ -651,6 +652,10 @@ function ResultPage({ navigate }: { navigate: (path: string) => void }) {
     if (!categoryId || selectedCards.length === 0) return null
     return generateMockReading(categoryId, selectedCards, language, t)
   }, [categoryId, language, selectedCards, t])
+
+  useEffect(() => {
+    setExpandedCardIndex(null)
+  }, [selectedCards])
 
   function restart() {
     reset()
@@ -668,39 +673,60 @@ function ResultPage({ navigate }: { navigate: (path: string) => void }) {
             <Sparkles className="size-3.5" />
             {t('resultBadge', { category: categoryCopy?.name ?? category.id })}
           </span>
-          <h1 className="mt-4 text-balance font-serif text-3xl font-bold text-foreground sm:text-4xl">
+          <h1 className="word-keep mt-4 text-balance font-serif text-3xl font-bold text-foreground sm:text-4xl">
             {t('resultTitle')}
           </h1>
         </div>
 
-        <div
-          className="mt-8 grid gap-3"
-          style={{
-            gridTemplateColumns: `repeat(${Math.min(reading.cards.length, 5)}, minmax(0, 1fr))`,
-          }}
-        >
-          {reading.cards.map((card, i) => (
-            <div
-              key={`${card.id}-${i}`}
-              className="relative z-0 flex animate-float-slow flex-col items-center gap-2"
-              style={{ animationDelay: `${i * 0.5}s` }}
-            >
-              <div className="relative z-0 w-full">
-                <TarotCard cardId={card.id} faceUp />
+        <div className="mt-6 rounded-3xl border border-primary/25 bg-card/25 shadow-inner shadow-black/20">
+          <div className="scrollbar-none -mx-px overflow-x-auto px-5 pb-20 pt-24 sm:px-8 sm:pt-28">
+          <div
+            className="mx-auto grid w-max justify-center gap-4"
+            style={{
+              gridTemplateColumns:
+                reading.cards.length === 1
+                  ? 'clamp(10.5rem, 20vw, 14rem)'
+                  : `repeat(${reading.cards.length}, clamp(9.75rem, 19vw, 13.25rem))`,
+            }}
+          >
+            {reading.cards.map((card, i) => (
+              <div
+                key={`${card.id}-${i}`}
+                className={
+                  'relative flex animate-float-slow flex-col items-center gap-2 hover:z-[100] focus-within:z-[100] ' +
+                  (expandedCardIndex === i ? 'z-[100]' : 'z-0')
+                }
+                style={{ animationDelay: `${i * 0.5}s` }}
+              >
+                <button
+                  type="button"
+                  className={
+                    'relative z-0 w-full origin-center rounded-xl outline-none transition-transform duration-200 ease-out hover:z-50 hover:scale-[1.35] focus-visible:z-50 focus-visible:scale-[1.35] ' +
+                    (expandedCardIndex === i ? 'scale-[1.35]' : '')
+                  }
+                  onClick={() => setExpandedCardIndex((current) => (current === i ? null : i))}
+                  aria-label={card.name}
+                >
+                  <TarotCard cardId={card.id} faceUp />
+                </button>
+                <span className="text-center text-[11px] leading-tight text-muted-foreground">
+                  {card.position}
+                </span>
               </div>
-              <span className="text-center text-[11px] leading-tight text-muted-foreground">
-                {card.position}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
+          </div>
         </div>
+        <p className="word-keep mt-3 text-center text-xs font-medium text-primary/85">
+          {t('resultCardHint')}
+        </p>
 
         <section className="mt-8 rounded-2xl border border-primary/30 bg-card/60 p-5">
           <h2 className="mb-2 flex items-center gap-2 font-serif text-lg font-semibold text-primary">
             <Quote className="size-4" />
             {t('summaryTitle')}
           </h2>
-          <p className="text-pretty leading-relaxed text-foreground/90">
+          <p className="word-keep text-pretty leading-relaxed text-foreground/90">
             {reading.summary}
           </p>
         </section>
@@ -729,7 +755,7 @@ function ResultPage({ navigate }: { navigate: (path: string) => void }) {
                 <p className="mt-1 text-xs text-primary/80">
                   {card.name}
                 </p>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                <p className="word-keep mt-1.5 text-sm leading-relaxed text-muted-foreground">
                   {card.text}
                 </p>
               </div>
@@ -742,7 +768,7 @@ function ResultPage({ navigate }: { navigate: (path: string) => void }) {
             <Sparkles className="size-4 text-primary" />
             {t('detailAdviceTitle')}
           </h2>
-          <p className="text-pretty leading-relaxed text-foreground/90">
+          <p className="word-keep text-pretty leading-relaxed text-foreground/90">
             {reading.advice}
           </p>
         </section>

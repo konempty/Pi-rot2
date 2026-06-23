@@ -15,7 +15,7 @@ export function StepHeader({
 }) {
   return (
     <header className="sticky top-0 z-20 border-b border-border/60 bg-background/80 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
         <button
           type="button"
           onClick={() => (backHref ? navigate(backHref) : history.back())}
@@ -24,7 +24,7 @@ export function StepHeader({
         >
           <ChevronLeft className="size-5" />
         </button>
-        <Wordmark className="[&_span]:text-lg" />
+        <Wordmark className="absolute left-1/2 -translate-x-1/2 [&_span]:text-lg" />
         <div className="flex items-center gap-2">
           <div className="hidden items-center gap-1.5 sm:flex" aria-hidden="true">
             {Array.from({ length: total }).map((_, i) => (

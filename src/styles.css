@@ -58,6 +58,11 @@ button {
   text-shadow: 0 0 24px oklch(0.82 0.13 80 / 35%);
 }
 
+.word-keep {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 .bg-starfield {
   background-image:
     radial-gradient(circle at 18% 22%, oklch(0.82 0.13 80 / 8%) 0, transparent 38%),
