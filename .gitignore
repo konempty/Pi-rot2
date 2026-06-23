@@ -18,3 +18,7 @@ pnpm-debug.log*
 # local screenshots / scratch files
 tmp-*
 *.tmp
+
+# Python cache
+__pycache__/
+*.py[cod]
